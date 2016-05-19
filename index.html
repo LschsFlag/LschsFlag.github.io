@@ -1,6 +1,7 @@
 <!Doctype html>
 <body>
 <img id="lschs" width="0" height="0" src="Picture1.png">
+<img id="star" width="0" height="0" src="Picture2.png"
 <canvas id="myCanvas" width="800" height="440">
 	<script>
 		var c=document.getElementById("myCanvas");
@@ -40,6 +41,14 @@
 		var ctx = canvas.getContext("2d");
 		var img = document.getElementById("lschs");
 		ctx.drawImage(img,200,110);
+	};
+	</script>
+	<script>
+	window.onload = function() {
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		var img = document.getElementById("star");
+		ctx.drawImage(img,10,10);
 	};
 	</script>
 </canvas>
